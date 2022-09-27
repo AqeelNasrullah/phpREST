@@ -9,6 +9,6 @@ function getDatabaseConnection() {
         return $conn;
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
-        exit();
+        die();
     }
 }

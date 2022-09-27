@@ -7,7 +7,6 @@ require_once '../config/database.php';
 
 $conn = getDatabaseConnection();
 
-
 $query = 'SELECT * FROM users';
 
 $result = $conn->prepare($query);
